@@ -1,3 +1,4 @@
 cxxflags.patch
 install.patch
 spelling.patch
+rename.patch
