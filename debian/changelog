@@ -1,5 +1,5 @@
-musescore-sftools (20180222-1~exp) unstable; urgency=high
+musescore-sftools (20180222-1) unstable; urgency=high
 
   * Initial Release
 
- -- Thorsten Glaser <tg@mirbsd.de>  Mon, 05 Mar 2018 01:33:36 +0100
+ -- Thorsten Glaser <tg@mirbsd.de>  Mon, 05 Mar 2018 02:12:16 +0100
