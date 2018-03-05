@@ -1,0 +1,19 @@
+Description: Do not override CMAKE_CXX_FLAGS from debhelper
+Author: mirabilos <tg@debian.org>
+Forwarded: no
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -20,11 +20,7 @@ include (${PROJECT_SOURCE_DIR}/build/Use
+ set(QT_MIN_VERSION    "5.6")
+ set(QT_USE_QTXML         TRUE)
+ 
+-if (MINGW)
+-      set(CMAKE_CXX_FLAGS   "-g -std=c++0x")
+-else (MINGW)
+-      set(CMAKE_CXX_FLAGS   "-g -std=c++0x -fPIC -fPIE")
+-endif (MINGW)
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+ 
+ add_executable(sfconvert
+    sfconvert.cpp sfont.cpp xml.cpp
