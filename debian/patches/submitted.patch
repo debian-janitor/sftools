@@ -1,4 +1,6 @@
-# DP: collected patches for upstream submission, for testing
+Description: Fix build and installation; rename
+Author: mirabilos <tg@debian.org>
+Forwarded: https://github.com/musescore/sftools/pull/18
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
