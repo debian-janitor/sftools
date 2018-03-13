@@ -13,7 +13,7 @@ Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: MuseScore SoundFont converter
- The musescore-sfconvert tool can be used to convert an SF2 SoundFont
+ The sf3convert tool can be used to convert an SF2 SoundFont
  into SF3 format, or into C code for embedding into a binary.
  .
  The SF3 SoundFont format is the same as SF2, except it uses
