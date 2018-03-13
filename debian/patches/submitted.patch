@@ -2,7 +2,15 @@
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -20,13 +20,16 @@ include (${PROJECT_SOURCE_DIR}/build/Use
+@@ -13,6 +13,7 @@
+ 
+ project(sfconvert)
+ CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
++include (GNUInstallDirs)
+ include (${PROJECT_SOURCE_DIR}/build/FindQt5.cmake)
+ include (${PROJECT_SOURCE_DIR}/build/UsePkgConfig1.cmake)
+ # set(CMAKE_VERBOSE_MAKEFILE ON)
+@@ -20,13 +21,16 @@ include (${PROJECT_SOURCE_DIR}/build/Use
  set(QT_MIN_VERSION    "5.6")
  set(QT_USE_QTXML         TRUE)
  
@@ -22,7 +30,7 @@
     sfconvert.cpp sfont.cpp xml.cpp
     )
  
-@@ -101,11 +104,14 @@ else (MINGW)
+@@ -101,11 +105,14 @@ else (MINGW)
        ${VORBIS_INCDIR}
     )
  
