@@ -2,8 +2,9 @@ musescore-sftools (20180222-2) UNRELEASED; urgency=medium
 
   * Document likely renaming of the binary package upcoming
   * Add patch to allow SF3 building in a reproducible manner
+  * Provide debian/upstream/metadata as prompted by lintian
 
- -- Thorsten Glaser <tg@mirbsd.de>  Tue, 13 Mar 2018 19:42:36 +0100
+ -- Thorsten Glaser <tg@mirbsd.de>  Tue, 13 Mar 2018 20:17:02 +0100
 
 musescore-sftools (20180222-1) unstable; urgency=high
 
