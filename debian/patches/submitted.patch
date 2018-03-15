@@ -4,15 +4,18 @@ Forwarded: https://github.com/musescore/sftools/pull/18
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -13,6 +13,7 @@
+@@ -11,8 +11,9 @@
+ #  the file LICENSE.GPL
+ #=============================================================================
  
- project(sfconvert)
+-project(sfconvert)
++project(sf3convert)
  CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
 +include (GNUInstallDirs)
  include (${PROJECT_SOURCE_DIR}/build/FindQt5.cmake)
  include (${PROJECT_SOURCE_DIR}/build/UsePkgConfig1.cmake)
  # set(CMAKE_VERBOSE_MAKEFILE ON)
-@@ -20,13 +21,16 @@ include (${PROJECT_SOURCE_DIR}/build/Use
+@@ -20,18 +21,21 @@ include (${PROJECT_SOURCE_DIR}/build/Use
  set(QT_MIN_VERSION    "5.6")
  set(QT_USE_QTXML         TRUE)
  
@@ -32,6 +35,21 @@ Forwarded: https://github.com/musescore/sftools/pull/18
     sfconvert.cpp sfont.cpp xml.cpp
     )
  
+ if (MINGW)
+-   target_link_libraries(sfconvert
++   target_link_libraries(sf3convert
+       ${QT_LIBRARIES}
+       vorbis
+       ##vorbisfile
+@@ -39,7 +43,7 @@ if (MINGW)
+       sndfile-1
+    )
+ 
+-   install( TARGETS sfconvert RUNTIME DESTINATION . )
++   install( TARGETS sf3convert RUNTIME DESTINATION . )
+ 
+    install_files ( . .dll
+       ${CROSS}/bin/libgcc_s_dw2-1.dll
 @@ -101,11 +105,14 @@ else (MINGW)
        ${VORBIS_INCDIR}
     )
@@ -48,9 +66,26 @@ Forwarded: https://github.com/musescore/sftools/pull/18
 +   install(TARGETS sf3convert RUNTIME DESTINATION bin)
 +   install(FILES sf3convert.1 DESTINATION ${CMAKE_INSTALL_MANDIR}/man1 COMPONENT doc)
  endif (MINGW)
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-### sfconvert
++### sf3convert
+ 
+ Utilities for SoundFont files.
+ 
+@@ -23,7 +23,7 @@ $ make release
+ 
+ This compresses the Fluid sound font from 148 MBytes to 20 MBytes.
+ 
+-    sfconvert -z FluidR3.SF2 mops.sf3
++    sf3convert -z FluidR3.SF2 mops.sf3
+ 
+ **The compressed sound font has the major version number 3. Its non standard
+ and can be used only (so far) by [MuseScore](http://musescore.org).**
 --- /dev/null
 +++ b/sf3convert.1
-@@ -0,0 +1,83 @@
+@@ -0,0 +1,85 @@
 +.\" Copyright © 2018 mirabilos <tg@debian.org>
 +.\"
 +.\" This manual page is provided under the same terms as the tool it describes.
@@ -130,6 +165,8 @@ Forwarded: https://github.com/musescore/sftools/pull/18
 +chunk.
 +.It
 +24-bit mode is disabled.
++.It
++Sample links are removed.
 +.El
 +.Pp
 +Note that this list is

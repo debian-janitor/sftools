@@ -22,3 +22,5 @@ Description: MuseScore SoundFont converter
  expect the Vorbis codec to be used, which is lossy; hence, an
  SF3 SoundFont is considered to have a corresponding SF2 one
  as source, and to be compiled via this tool.
+ .
+ Note: the package will likely be renamed (upstream and in Debian).
