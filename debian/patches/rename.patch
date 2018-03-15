@@ -1,6 +1,7 @@
 Description: Rename to avoid file conflict with audiofile-tools
+ Note that upstream wishes to switch to a different name
 Author: mirabilos <tg@debian.org>
-Forwarded: not-needed
+Forwarded: part of https://github.com/musescore/sftools/pull/18
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt

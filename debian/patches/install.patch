@@ -1,6 +1,6 @@
 Description: Are non-Windows users not allowed to install this?
 Author: mirabilos <tg@debian.org>
-Forwarded: no
+Forwarded: part of https://github.com/musescore/sftools/pull/18
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt

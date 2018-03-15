@@ -4,7 +4,7 @@ Forwarded: https://github.com/musescore/sftools/pull/20
 
 --- a/sfont.cpp
 +++ b/sfont.cpp
-@@ -1199,8 +1199,7 @@ int SoundFont::writeCompressedSample(Sample* s)
+@@ -1199,8 +1199,7 @@ int SoundFont::writeCompressedSample(Sam
        vorbis_comment_init(&vc);
        vorbis_analysis_init(&vd, &vi);
        vorbis_block_init(&vd, &vb);
@@ -14,7 +14,3 @@ Forwarded: https://github.com/musescore/sftools/pull/20
  
        ogg_packet header;
        ogg_packet header_comm;
-
-
-
-
