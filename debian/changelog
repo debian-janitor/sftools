@@ -1,6 +1,7 @@
 musescore-sftools (20180325-1) unstable; urgency=high
 
   * Rename binary to sf3convert as requested by upstream
+    (the former package name existed short enough no transition is needed)
   * New upstream snapshot, merges all patches
 
  -- Thorsten Glaser <tg@mirbsd.de>  Sun, 25 Mar 2018 18:10:44 +0200
