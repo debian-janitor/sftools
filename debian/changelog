@@ -4,7 +4,7 @@ musescore-sftools (20180325-1) unstable; urgency=high
     (the former package name existed short enough no transition is needed)
   * New upstream snapshot, merges all patches
 
- -- Thorsten Glaser <tg@mirbsd.de>  Sun, 25 Mar 2018 18:10:44 +0200
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 25 Mar 2018 19:28:35 +0200
 
 musescore-sftools (20180222-2) unstable; urgency=low
 
