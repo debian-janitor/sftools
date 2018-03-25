@@ -1,5 +1,0 @@
-# there’s none
-musescore-sfconvert: no-upstream-changelog
-
-# false positive: name of a RIFF chunk
-musescore-sfconvert: spelling-error-in-manpage usr/share/man/man1/sf3convert.1.gz pres press

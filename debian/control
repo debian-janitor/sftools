@@ -8,7 +8,7 @@ Standards-Version: 4.1.3
 VCS-git: https://github.com/mirabilos/sftools
 VCS-Browser: https://github.com/mirabilos/sftools
 
-Package: musescore-sfconvert
+Package: sf3convert
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -22,5 +22,3 @@ Description: MuseScore SoundFont converter
  expect the Vorbis codec to be used, which is lossy; hence, an
  SF3 SoundFont is considered to have a corresponding SF2 one
  as source, and to be compiled via this tool.
- .
- Note: the package will likely be renamed (upstream and in Debian).

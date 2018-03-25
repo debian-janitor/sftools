@@ -1,10 +1,9 @@
-musescore-sftools (20180222-3) UNRELEASED; urgency=medium
+musescore-sftools (20180325-1) unstable; urgency=high
 
-  * Collect patches for upstream submission
   * Rename binary to sf3convert as requested by upstream
-    XXX TODO: also rename binary package, etc. once new snapshot
+  * New upstream snapshot, merges all patches
 
- -- Thorsten Glaser <tg@mirbsd.de>  Tue, 13 Mar 2018 20:17:02 +0100
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 25 Mar 2018 18:10:44 +0200
 
 musescore-sftools (20180222-2) unstable; urgency=low
 
