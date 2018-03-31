@@ -1,3 +1,9 @@
+musescore-sftools (20180325-1~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports.
+
+ -- Thorsten Glaser <tg@mirbsd.de>  Sat, 31 Mar 2018 02:41:30 +0200
+
 musescore-sftools (20180325-1) unstable; urgency=high
 
   * Rename binary to sf3convert as requested by upstream
