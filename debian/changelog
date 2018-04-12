@@ -1,3 +1,9 @@
+musescore-sftools (20180325-1~bpo9+2) stretch-backports; urgency=low
+
+  * Update VCS-* URLs for stretch-backports.
+
+ -- Thorsten Glaser <tg@mirbsd.de>  Thu, 12 Apr 2018 18:15:15 +0200
+
 musescore-sftools (20180325-1~bpo9+1) stretch-backports; urgency=medium
 
   * Rebuild for stretch-backports.
