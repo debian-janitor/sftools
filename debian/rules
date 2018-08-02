@@ -1,5 +1,10 @@
 #!/usr/bin/make -f
 
+ifeq (,$(findstring terse,${DEB_BUILD_OPTIONS}))
+export DH_VERBOSE=1
+export V=1
+endif
+
 LC_ALL:=C
 export LC_ALL
 
