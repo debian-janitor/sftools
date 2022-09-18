@@ -1,9 +1,12 @@
-musescore-sftools (20180325-2) UNRELEASED; urgency=medium
+musescore-sftools (20201011-1) unstable; urgency=medium
 
-  * Bump debhelper from old 11 to 12.
+  * New upstream release
+    - more permissive licence (LGPLv2+ with OpenSSL exception)
+  * Bump debhelper from old 11 to 13.
   * Set debhelper-compat version in Build-Depends.
+  * Bump Policy, add R³:no, remove buster’s -Wl,--as-needed
 
- -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 22:01:35 +0000
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:09:11 +0200
 
 musescore-sftools (20180325-1) unstable; urgency=high
 
