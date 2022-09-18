@@ -5,8 +5,10 @@ musescore-sftools (20201011-1) unstable; urgency=medium
   * Bump debhelper from old 11 to 13.
   * Set debhelper-compat version in Build-Depends.
   * Bump Policy, add R³:no, remove buster’s -Wl,--as-needed
+  * Explicitly B-D on an implementation of pkg-config so libogg and
+    libvorbis can be detected (Closes: #1020058)
 
- -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:09:11 +0200
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:09:42 +0200
 
 musescore-sftools (20180325-1) unstable; urgency=high
 
