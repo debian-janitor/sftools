@@ -12,6 +12,7 @@ TZ:=UTC
 export TZ
 
 export DEB_BUILD_MAINT_OPTIONS := hardening=+all
+export DEB_CXXFLAGS_MAINT_APPEND := -Wno-deprecated-declarations
 
 %:
 	dh $@ --buildsystem=cmake

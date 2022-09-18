@@ -8,8 +8,10 @@ musescore-sftools (20201011-1) unstable; urgency=medium
   * Explicitly B-D on an implementation of pkg-config so libogg and
     libvorbis can be detected (Closes: #1020058)
   * Update lintian overrides
+  * Unclutter log (-Wno-deprecated-declarations, these are upstream’s
+    job to fix)
 
- -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:18:56 +0200
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:21:51 +0200
 
 musescore-sftools (20180325-1) unstable; urgency=high
 
