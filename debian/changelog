@@ -11,7 +11,7 @@ musescore-sftools (20201011-1) unstable; urgency=medium
   * Unclutter log (-Wno-deprecated-declarations, these are upstream’s
     job to fix)
 
- -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:21:51 +0200
+ -- Thorsten Glaser <tg@mirbsd.de>  Sun, 18 Sep 2022 21:28:01 +0200
 
 musescore-sftools (20180325-1) unstable; urgency=high
 
